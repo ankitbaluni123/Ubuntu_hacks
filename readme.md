@@ -1,0 +1,1 @@
+1. lock_unlock_sound.sh : This file will simply produce a sound whenever you lock your pc or reopen it (say using Win+L). The music file is uploaded along with it in the same directory. To make it work the script must run beforehand. This can be done by going in the StartUpApplications and "Add" a new feature to make it run using `bash lock_unlock_sound.sh` command.
