@@ -1,0 +1,16 @@
+#!/bin/bash
+
+VAR1=`gsettings get org.gnome.system.proxy mode`
+VAR2="'manual'"
+VAR3="'none'"
+
+if [ "$VAR1" = "$VAR2" ]; then
+#    echo here1
+    gsettings set org.gnome.system.proxy mode 'none'
+    notify-send none
+fi
+if [ "$VAR1" = "$VAR3" ]; then
+#    echo here2
+     gsettings set org.gnome.system.proxy mode 'manual'
+     notify-send manual
+fi
